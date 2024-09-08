@@ -8,9 +8,12 @@ I have created a local directory 'github2'and created file 'readme.txt', which i
 
 -----------------------------------------------------------------------
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 Now i have edited this file on github itself and are going to pull into local and then push with the next update-2 commit.
 ----------------------------------------------------------------------------------------------------------------------------
 =======
+=======
+>>>>>>> Stashed changes
 I have made some changes in local file and then made changes on remote file on the same time on same file, so now i have to first review the changes and have to merge changes or dtash local commit to hold local changes. 
 
 So i have to commit or stach the modification done on local file : 
@@ -49,20 +52,14 @@ lets stach then pop later after merge remote file;
 stash@{0}: WIP on main: 2b93212 Update readme.txt
 stash@{1}: WIP on main: ec15a18 commit for update-1 for a demo file
 stash@{2}: WIP on main: ec15a18 commit for update-1 for a demo file
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
->>>>>>> Stashed changes
+------------------------------------------------------------------------------------------------------------
+git checkout staging
+PS C:\Users\Lenovo\Desktop\github2> git push -u origin staging
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'staging' on GitHub by visiting:
+remote:      https://github.com/REWATSING/github/pull/new/staging
+remote:
+To https://github.com/REWATSING/github.git
+ * [new branch]      staging -> staging
+branch 'staging' set up to track 'origin/staging'.
