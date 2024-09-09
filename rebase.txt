@@ -4,3 +4,17 @@ Cleaning Up History: It allows you to clean up your commit history by squashing 
 Rewriting Commits: You can fix typos or errors in commit messages, or even modify commits themselves before pushing to a shared repository.
 
 Team Collaboration: Especially in teams, having a clean and understandable history helps collaborators understand the project's evolution without getting bogged down in unnecessary or redundant commits.
+
+Common Use Case:
+Suppose you realize that the "More changes" commit was just a small follow-up to "Added new content," and you'd prefer to have just one commit representing both changes. You'd use git rebase -i to squash them into a single commit.
+
+After completing the rebase process, your history would contain just one clean commit, which might look like this:
+
+sql
+Copy code
+commit abcdef12
+Author: You <you@example.com>
+Date:   Mon Sep 9 2024
+
+    Added new content and made more changes
+This makes your commit history more concise and readable.
