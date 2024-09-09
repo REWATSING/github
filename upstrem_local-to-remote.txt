@@ -1,0 +1,26 @@
+The error you're seeing indicates that the branch `uat` does not have an upstream (remote) branch associated with it. This happens when you've created a new branch locally but haven't told Git where to push the changes on the remote repository (like GitHub, GitLab, etc.).
+
+To resolve this, you can use the command suggested in the error message:
+
+### Solution:
+1. **Set the upstream branch** and push your changes:
+   ```bash
+   git push --set-upstream origin uat
+   ```
+
+   This command does two things:
+   - **Pushes the `uat` branch** to the remote repository (to the `origin` remote).
+   - **Sets the upstream branch**, meaning it links your local `uat` branch with the remote `uat` branch, so in the future you can just run `git push` without needing extra options.
+
+### Explanation:
+- **Upstream Branch:** An upstream branch is the remote branch that your local branch is tracking. Once the upstream is set, Git knows where to push and pull from.
+- **Origin:** This is the default name for the remote repository when you clone it.
+
+Once you run this command, future `git push` commands will work smoothly without needing the `--set-upstream` option, as your `uat` branch will be linked to the remote branch.
+
+### Automatic Setup for Future Branches (Optional):
+If you want Git to automatically set the upstream branch for all new branches, you can configure Git with the following command:
+```bash
+git config --global push.autoSetupRemote true
+```
+This way, Git will automatically set the upstream when pushing new branches.
