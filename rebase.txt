@@ -18,3 +18,14 @@ Date:   Mon Sep 9 2024
 
     Added new content and made more changes
 This makes your commit history more concise and readable.
+
+
+
+
+Step 7: Start an interactive rebase
+bash
+Copy code
+git rebase -i HEAD~2
+Rebase in this context means you’re going to modify the last two commits (HEAD~2 indicates the last two commits).
+Interactive mode (-i) allows you to modify, reorder, or squash (combine) commits.
+HEAD~2 refers to the last two commits on your current branch. HEAD is the pointer to the latest commit, and HEAD~2 means two commits before the latest one.
