@@ -1,0 +1,6 @@
+Why Is Interactive Rebase Important?
+Cleaning Up History: It allows you to clean up your commit history by squashing multiple small commits into one, reordering commits, or removing unwanted commits. This makes the project history easier to read and review.
+
+Rewriting Commits: You can fix typos or errors in commit messages, or even modify commits themselves before pushing to a shared repository.
+
+Team Collaboration: Especially in teams, having a clean and understandable history helps collaborators understand the project's evolution without getting bogged down in unnecessary or redundant commits.
